@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: añade aquí los estilos TituloPantalla, CampoFormulario,
+         BotonPrincipal, BotonSecundario y TextoResultado.
+         Consulta el tutorial breve de estilos del PDF. -->
+    <style name="TituloPantalla">
+        <item name="android:layout_width">match_parent</item>   <!-- ancho completo -->
+        <item name="android:layout_height">wrap_content</item>  <!-- alto según texto -->
+        <item name="android:textSize">24sp</item>                <!-- letra grande -->
+        <item name="android:textStyle">bold</item>               <!-- negrita -->
+        <item name="android:textColor">@color/azul_principal</item>
+        <item name="android:layout_marginBottom">16dp</item>     <!-- separa del primer campo -->
+    </style>
+
+    <style name="CampoFormulario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>                 <!-- aire dentro del campo -->
+        <item name="android:layout_marginBottom">8dp</item>      <!-- separa campos entre sí -->
+        <item name="android:textColor">@color/texto_principal</item>
+    </style>
+
+    <style name="BotonPrincipal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>         <!-- separa del último campo -->
+        <item name="android:backgroundTint">@color/turquesa</item> <!-- color del botón (Material) -->
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="BotonSecundario">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:backgroundTint">@color/texto_secundario</item> <!-- gris: acción secundaria -->
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="TextoResultado">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>        <!-- separa de los botones -->
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/texto_principal</item> <!-- color inicial; Kotlin lo cambia -->
+    </style>
+</resources>
