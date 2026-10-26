@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul_principal">#19364F</color>
+    <color name="turquesa">#008E9B</color>
+    <color name="fondo_app">#F3F7FA</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="texto_principal">#19364F</color>
+    <color name="texto_secundario">#526876</color>
+    <color name="rojo_error">#B42318</color>
+    <color name="verde_ok">#146C43</color>
+</resources>

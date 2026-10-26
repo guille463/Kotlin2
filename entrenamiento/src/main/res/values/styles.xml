@@ -43,6 +43,6 @@
         <item name="android:layout_marginTop">16dp</item>        <!-- separa de los botones -->
         <item name="android:padding">12dp</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/texto_principal</item> <!-- color inicial; Kotlin lo cambia -->
+        <item name="android:textColor">@color/texto_principal</item>
     </style>
 </resources>

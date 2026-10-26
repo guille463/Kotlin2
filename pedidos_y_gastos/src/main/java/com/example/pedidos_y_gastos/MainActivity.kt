@@ -42,8 +42,9 @@ class MainActivity : AppCompatActivity() {
             val urgente = cbUrgente.isChecked
 
             // VALIDAR
+
             if (importe == null || importe < 0) {
-                tvResultado.text = "Importe no válido (debe ser 0 o más)"
+                tvResultado.text = "Importe no introducido"
                 tvResultado.setTextColor(getColor(R.color.rojo_error))
             } else if (peso == null || peso <= 0 || peso > PESO_MAXIMO) {
                 tvResultado.text = "Peso no válido (más de 0 y hasta 30 kg)"

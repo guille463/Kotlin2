@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // BLOQUE 1: conectar vistas
+
         val etNombre = findViewById<EditText>(R.id.etNombre)
         val etMinutos = findViewById<EditText>(R.id.etMinutos)
         val etIntensidad = findViewById<EditText>(R.id.etIntensidad)
@@ -20,10 +20,8 @@ class MainActivity : AppCompatActivity() {
         val btnLimpiar = findViewById<Button>(R.id.btnLimpiar)
         val tvResultado = findViewById<TextView>(R.id.tvResultado)
 
-        // BLOQUE 2: guardar el mensaje inicial
         val mensajeInicial = tvResultado.text.toString()
 
-        // BLOQUE 3: botón Registrar
         btnRegistrar.setOnClickListener {
             val nombre = etNombre.text.toString().trim()
             val minutos = etMinutos.text.toString().toIntOrNull()
@@ -51,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // BLOQUE 4: botón Limpiar
+
         btnLimpiar.setOnClickListener {
             etNombre.setText("")
             etMinutos.setText("")
@@ -62,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // BLOQUE 5: funciones de cálculo
+
     private fun calcularPuntos(minutos: Int, intensidad: Int): Int {
         return minutos * intensidad
     }

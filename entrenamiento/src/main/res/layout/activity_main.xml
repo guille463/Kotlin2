@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- RAÍZ: pantalla desplazable. Solo admite UN hijo directo -->
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@color/fondo_app">
 
-    <!-- ÚNICO HIJO: contenedor vertical con todas las vistas -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Título: sin id porque Kotlin no lo toca -->
         <TextView
             style="@style/TituloPantalla"
             android:text="Registro de entrenamiento" />
 
-        <!-- Campo nombre: texto -->
+
         <EditText
             android:id="@+id/etNombre"
             style="@style/CampoFormulario"
@@ -26,7 +25,7 @@
             android:inputType="textPersonName"
             android:maxLines="1" />
 
-        <!-- Campo minutos: entero -->
+
         <EditText
             android:id="@+id/etMinutos"
             style="@style/CampoFormulario"
@@ -34,7 +33,7 @@
             android:inputType="number"
             android:maxLength="3" />
 
-        <!-- Campo intensidad: entero -->
+
         <EditText
             android:id="@+id/etIntensidad"
             style="@style/CampoFormulario"
@@ -42,19 +41,19 @@
             android:inputType="number"
             android:maxLength="2" />
 
-        <!-- Botón principal -->
+
         <Button
             android:id="@+id/btnRegistrar"
             style="@style/BotonPrincipal"
             android:text="Registrar" />
 
-        <!-- Botón secundario -->
+
         <Button
             android:id="@+id/btnLimpiar"
             style="@style/BotonSecundario"
             android:text="Limpiar" />
 
-        <!-- Resultado: Kotlin cambia su texto y su color -->
+
         <TextView
             android:id="@+id/tvResultado"
             style="@style/TextoResultado"
