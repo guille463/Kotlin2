@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: añade aquí los estilos TituloPantalla, CampoFormulario,
+         BotonPrincipal, BotonSecundario y TextoResultado.
+         Consulta el tutorial breve de estilos del PDF. -->
+    <style name="TituloPantalla"><item name="android:textSize">24sp</item></style>
+    <style name="CampoFormulario"><item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item></style>
+    <style name="BotonPrincipal"><item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item></style>
+    <style name="BotonSecundario"><item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item></style>
+    <style name="TextoResultado"><item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item></style>
+</resources>
